@@ -1,0 +1,124 @@
+/* Container for the cart page */
+.cart-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Container for cart items */
+.cart-items {
+  margin-bottom: 20px;
+}
+
+/* Individual cart item styling */
+.cart-item {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Hover effect for cart items */
+.cart-item:hover {
+  background-color: #f9f9f9; /* Light background on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Remove button styling */
+.remove-button {
+  background-color: #e74c3c; /* Red background */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Remove button hover effect */
+.remove-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Checkout button styling */
+.checkout-button {
+  background-color: #2ecc71; /* Green background */
+  color: white;
+  padding: 15px 20px; /* Increased padding */
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Checkout button hover effect */
+.checkout-button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Button for adding/removing quantity */
+.cart-item button {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  margin-left: 10px; /* Spacing from other elements */
+  color: #007bff; /* Blue color */
+  font-size: 20px; /* Font size */
+}
+
+/* Button hover effect */
+.cart-item button:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Cart item image styling */
+.cart-item-image {
+  width: 80px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between image and text */
+}
+
+/* Cart item name styling */
+.cart-item-name {
+  flex: 1; /* Allow the name to take up available space */
+  font-weight: bold; /* Bold text */
+}
+
+/* Cart item price styling */
+.cart-item-price {
+  margin-left: 15px; /* Space between price and other elements */
+  font-size: 16px; /* Font size for price */
+}
+
+/* Summary section styling */
+.cart-summary {
+  display: flex; /* Flex layout for summary section */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+}
+
+/* Total price styling */
+.cart-summary p {
+  font-size: 18px; /* Font size for total */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .cart-item button {
+    font-size: 16px; /* Smaller button text on small screens */
+  }
+
+  .checkout-button {
+    width: 100%; /* Full width on small screens */
+  }
+}
